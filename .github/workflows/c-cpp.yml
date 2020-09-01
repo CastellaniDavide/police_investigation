@@ -10,11 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./bin
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: cd
+      run: cd ./bin/
+    - name: gcc
+      run: gcc police_investigation.cpp -o police_investigation
