@@ -15,8 +15,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: go_to_the_file
       run: ./bin/
-    - name: make
-      run: make
+    - name: make 
+      run: make police_investigation.cpp
     - name: make check
       run: make check
     - name: make distcheck
