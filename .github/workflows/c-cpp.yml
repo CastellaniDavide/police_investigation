@@ -1,11 +1,8 @@
 name: C/C++ CI
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+  - push
+  
 jobs:
   build:
 
@@ -14,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: go_to_the_file
-      run: ./bin/
+      run: cd ./bin/
     - name: make 
       run: make police_investigation.cpp
     - name: make check
